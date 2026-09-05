@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python environment / cache
+.pytest_cache/
+.mypy_cache/
+
+# Model / large files
+*.pth
+*.pt
+*.onnx
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Secrets / environment variables
+.env
+.env.*
+
+# Streamlit
+.streamlit/secrets.toml
