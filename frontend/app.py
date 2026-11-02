@@ -1,3 +1,4 @@
+import os
 import base64
 import hashlib
 import io
@@ -54,9 +55,13 @@ def pil_to_data_uri(image, image_format="PNG"):
 # BACKEND
 # ============================================================
 
-BACKEND_URL = "http://localhost:8000/predict"
-SCREENINGS_URL = "http://localhost:8000/screenings"
+BACKEND_BASE_URL = os.getenv(
+    "BACKEND_URL",
+    "http://localhost:8000"
+).rstrip("/")
 
+BACKEND_URL = f"{BACKEND_BASE_URL}/predict"
+SCREENINGS_URL = f"{BACKEND_BASE_URL}/screenings"
 
 # ============================================================
 # PAGE CONFIGURATION
