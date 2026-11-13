@@ -12,3 +12,5 @@ grad-cam
 requests
 streamlit
 reportlab
+datasets
+pyarrow==19.0.1
